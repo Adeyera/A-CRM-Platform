@@ -1,0 +1,18 @@
+.drop-down{
+    padding: 1em 1em 1em 1.2em;
+    background-color: rgba(177, 177, 177, 0.2);
+    color: #C0C0C0 ;
+    // width: 50px;
+    display: flex; align-items: center;justify-content:center; border-radius: 21px;
+    &__position {
+        display: flex; align-items: center;justify-content:center;
+        span{
+            font-size: 0.8rem;
+        }
+        .bx{
+            font-size: 1rem;
+        }
+        
+    }
+
+}

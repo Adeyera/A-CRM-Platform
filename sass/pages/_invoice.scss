@@ -1,0 +1,11 @@
+.action {
+  ._1 {border-radius: 5px;
+    padding: 0.6em 1em;
+    background-color: rgb(137, 109, 0);
+    color: white;
+    &:hover{
+        background-color: $yellow-primary;
+        color: black;
+    }
+  }
+}

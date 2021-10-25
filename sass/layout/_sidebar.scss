@@ -1,0 +1,103 @@
+.sidebar {
+  // height: 100vh;
+  width: 20%;
+  // min-width: 300px;
+  background-color: $bg-color-secondary;
+  padding: 2em 0;
+  .logo-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    img {
+      width: 3.2em;
+      height: auto;
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: white;
+      margin-left: 0.7em;
+    }
+  }
+  .side-nav {
+    margin-top: 5em;
+    &__item {
+      margin-top: 1em;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+    //   margin-top: 1em;
+      padding: 1em 0;
+        span {
+        font-size: 0.9rem;
+        color: white;
+        margin-left: 1em;
+      }
+      .bx {
+        color: white;
+        font-size: 1.6em;
+      }
+      &:hover {
+        border-left: 4px solid $yellow-primary;
+        background-color: #292929;
+        span,
+        .bx {
+          color: $yellow-primary;
+        }
+      }
+    }
+    margin-bottom: 5em;
+  }
+  .user-nav {
+    padding: 2em 0.5em;
+    min-width: 120px;
+    background-color: #343434;
+    border-radius: 27px;
+    margin: 0 8em 2em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    &__name {
+      font-size: 0.6rem;
+      color: white;
+    }
+    &__job {
+      color: #9f9581;
+    }
+    &--pic-box {
+        min-width: 60px;
+      height: 70px;
+      margin-bottom: 1em;
+      border-radius: 50%;
+      width: 70px;
+      background-color: $yellow-secondary;
+      display: flex;
+      justify-content: center;
+      
+      align-items: center;
+      img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+  .logout{
+      font-size: 1rem;
+      a{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          color: white;
+          span{
+              margin: 0 0.5em;
+          }
+      }
+  }
+}

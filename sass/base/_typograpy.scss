@@ -1,0 +1,112 @@
+.first-section {
+  &--primary {
+    color: white;
+    text-align: center;
+    &--main {
+      font-size: 2rem;
+      font-weight: 450;
+      margin-bottom: 0.5em;
+    }
+    &--sub {
+      font-size: 0.9rem;
+      font-weight: 300;
+      line-height: calc(15 * 1.5) px;
+    }
+  }
+}
+.second-section {
+  .form {
+    .btn {
+      margin-bottom: 20px;
+    }
+    .form-heading {
+      &--primary {
+        font-size: 2rem;
+        color: white;
+        text-align: center;
+        padding: 0em 0em 0.8em 0em;
+      }
+    }
+    .input-groups {
+      margin-bottom: 4em;
+      color: white;
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        &__input {
+          border: none;
+          border-bottom: 1px solid $grey-primary;
+          background: none;
+          color: $grey-secondary;
+          padding: 0.5em 2em;
+          &:focus {
+            outline: none;
+          }
+        }
+        label {
+          font-size: 1rem;
+          font-weight: 500;
+          padding-bottom: 0.5em;
+        }
+
+        margin-bottom: 2em;
+      }
+
+      &__help {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .forgot-password {
+          font-size: 0.7rem;
+          font-weight: 500;
+          color: $yellow-primary;
+        }
+        .remember-me {
+          display: flex;
+          flex-direction: row;
+          &__text {
+            font-size: 0.7rem;
+            font-weight: 300;
+            color: white;
+            padding-left: 0.5em;
+          }
+        }
+      }
+    }
+  }
+}
+.modal-invoice {
+  padding: 3em;
+  width: 50%;
+  &__title {
+    font-size: 1.3rem;
+    color: white;
+  }
+  form{
+    fieldset{
+      label{
+        font-size: 0.7rem;
+        color: $grey-secondary;
+      }
+    }
+  }
+}
+.invoice-preview{
+  strong{
+    font-weight: 600; color: black;
+  }
+  .label{
+    color: $text-color-grey;
+    text-transform: uppercase;
+  }
+  h3{
+    color: $text-color-grey;
+  }
+  .body{
+    .label{
+      text-transform: capitalize;
+      font-weight: 600;color: black;
+    }
+
+  }
+}

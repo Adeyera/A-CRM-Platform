@@ -1,0 +1,64 @@
+body{
+  background-color: $dark-primary;
+  height: 100vh;
+  width: 100%;
+}
+.homepage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+ height: 100vh;
+}
+main {
+  width: 90%;
+  padding: 4em 3em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  // flex-shrink: 0;
+  .first-section {
+    width: 45%;
+    min-width: 500px;
+    &__logo img {
+      width: 30px;
+    }
+    &__hero {
+      text-align: center;
+      img {
+        width: 300px;
+        height: auto;
+      }
+    }
+  }
+  justify-content: space-between;
+
+  .second-section {
+    background-color: $dark-secondary;
+    border-radius: 36px;
+    width: 35%;
+    // animation: mymove 1s linear;
+    // animation-iteration-count: infinite;
+    .form {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      justify-content: space-between;
+      padding: 2.5em;
+      flex-direction: column;
+      .btn-login {
+        width: 100%;margin-top: -20px;
+      }
+      .bx {
+        color: $yellow-primary;
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  .divider{
+    border: solid 1px #5F5F5F;
+    height: 500px;
+  }
+}

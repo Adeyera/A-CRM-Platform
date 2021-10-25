@@ -1,0 +1,10 @@
+.display-info {
+    background-color: $bg-color-primary;
+    // display: flex;
+    // flex-direction: column;
+    overflow-x: hidden;flex-wrap: no-wrap;
+    // align-items: flex-start; justify-content: start;
+    display: grid; grid-template-columns: 1fr; gap: 1em;
+    align-items: flex-start;
+    
+}

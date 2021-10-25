@@ -1,0 +1,205 @@
+.modal-invoice {
+  background-color: $bg-color-tertiary;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 40%;
+  padding-left: 4em;
+  border-radius: 50px 0 0 50px;
+  
+  .fill-invoice {
+    display: grid;
+    gap: 2.5em;
+    label {
+      display: flex;
+      flex-direction: column;
+      span {
+        padding-bottom: 1em;
+      }
+    }
+    &__product-detail {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5em;
+      .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+    .add {
+      font-size: 0.6rem;
+      padding: 0.8em 0;
+      color: $grey-secondary;
+    }
+    &__note textarea {
+      margin-top: 1em;
+      max-height: 80px;
+      border-radius: 20px;
+      outline: none;
+      padding: 1em 2em;
+      font-size: 0.8rem;
+      color: white;
+      background-color: $search-bg;
+    }
+  }
+  form {
+    margin-left: 0;
+    .submit {
+      margin-top: -1.5em;
+
+      display: grid;
+      border: none;
+      font-size: 0.5rem;
+      grid-template-columns: repeat(5, 1fr);
+      align-items: center;
+      justify-content: flex-start;
+      & > * {
+        color: $yellow-primary;
+        padding: 0.5em;
+        border: none;
+        font-size: 0.7rem;
+        letter-spacing: 0.03rem;
+        border-radius: 5px;
+      }
+      &__preview {
+        grid-column: 1/2;
+        background: none;
+        border: none;
+        cursor: pointer;
+      }
+      &__print {
+        grid-column: 4/5;
+        background: $search-bg;
+      }
+      &__send {
+        color: black;
+        background-color: $yellow-primary;
+      }
+    }
+    fieldset {
+      // display: block;
+      padding: 1em 0;
+      position: relative;
+      border: none;
+      &::before {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: -3em;
+        height: 100%;
+        width: 4px;
+        border-radius: 10px;
+        background-color: $yellow-primary;
+      }
+    }
+  }
+  &__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .close {
+    cursor: pointer;
+  }
+}
+.invoice-preview {
+  transform: translate(-50%,-50%);
+  width: 30%;
+  background-color: $yellow-secondary;
+  height: 80vh;
+  padding-right: 4em;
+  border-radius: 12px;
+  img {
+    width: 30px;
+    float: right;
+  }
+  &__content{
+      background-color: white;
+      height: 100%;padding:2em 3em ;
+
+   
+  }
+  .address{
+    text-transform: capitalize;
+    font-size: 0.6rem; font-weight: 400;
+    color: black;
+  }
+  &__product-list {
+    .theader {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    .body {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+    padding: 1em 1em;
+    border: solid 0.1em $grey-primary;
+    border-radius: 12px;
+  }
+  &__name {
+    color: yellow;
+    strong {
+      font-size: 1.5rem;
+    }
+  }
+  &__dates{
+      display: grid; grid-template-columns: 1fr  1fr;
+      .label{
+          display: flex; flex-direction: column;
+      }
+      .date{
+        color: black;
+        font-weight: 500;
+      }
+  }
+  .additional_note{
+    display: flex;flex-direction:column;justify-content:space-around;
+      .note{
+          width: 100%;
+          border-left: 4px solid $yellow-primary;
+          height: 80px;
+          background-color: rgb(246, 244, 244);
+          text-transform: capitalize;
+      }
+  }
+  .btn-invoice{
+      float: right; color: $yellow-primary;
+      .bx{
+        color: black;
+        font-size: 1rem;
+        margin-right: 0.5em;
+      }
+      justify-content: space-between;
+      display: flex;flex-direction: row;align-items: center;
+  }
+  position: absolute;
+  top: 50%;
+  z-index: 100;
+  left: 50%;
+  .link{
+    .bx{
+      font-size: 0.75rem;color: $yellow-primary;
+    }
+    a{
+      color: $dark-secondary ;
+      &:hover{
+        background-color: $grey-secondary;
+      }
+      &:active{
+        color: $yellow-secondary;
+      }
+    }
+    
+  }
+}
+
+.none {
+  display: none;
+}

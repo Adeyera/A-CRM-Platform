@@ -1,0 +1,34 @@
+.btn {
+  padding: 1em 0.5em;
+  text-align: center;
+  background-color: $yellow-primary;
+  border-radius: 22px;
+  font-weight: 600;
+  color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 12px rgb(41, 41, 41) ;
+}
+.input-group{
+    position: relative;
+}
+input:focus{
+  outline: 1px solid white;
+}
+
+.border {
+ position: absolute; 
+ bottom: 0;
+ width: 0%;
+ left: 0;
+ height: 2px;
+ transition: 0.6s;
+ background-color: brown;
+}
+input:focus+.border{
+    width: 100%;
+}
